@@ -11,3 +11,9 @@ h2 {
   font-size: 4rem;
   text-decoration: underline;
 } */
+.name{
+  colour: palevioletred;
+}
+.question{
+  colour: blueviolet;
+}

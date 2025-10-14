@@ -12,10 +12,10 @@ h2 {
   text-decoration: underline;
 } */
 .name{
-  colour: palevioletred;
+  color: palevioletred;
 }
 .question{
-  colour: blueviolet;
+  color: blueviolet;
   border: 5px;
-  border-colour: blueviolet;
+  border-color: blueviolet;
 }

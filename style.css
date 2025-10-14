@@ -16,4 +16,6 @@ h2 {
 }
 .question{
   colour: blueviolet;
+  border: 5px;
+  border-colour: blueviolet;
 }

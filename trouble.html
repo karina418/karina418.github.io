@@ -11,12 +11,12 @@
   <!--I added a forward slash the closing h2 tag because without it, it would be considered a starting tag when it isnt supposed to be one-->
 <h2> Name</h2> 
 </div>
- <!-- Added missing </div> to properly close #hero section -->
+ 
 
 <div id="hero">
 <h1>Elephants of the World</h1> 
 <p>The gentle giants that shape our ecosystems.</p>
-
+  
 <div class=section>
 <h2>About Elephants</h2>
 <p>Elephants are the largest land mammals on Earth. They are highly intelligent and form
@@ -49,7 +49,8 @@ There are three main species of elephants — each adapted to its own habitat:
 </ul>
   <!--I added a closing ul tag because the list wouldnt know where to end without it, meaning that it would affect the following information-->
 <div class="info-box">
-<p><strong>Fun fact: Elephant ears help regulate body temperature!</p>
+ <!-- Closed <strong> tag properly -->
+      <p><strong>Fun fact:</strong> Elephant ears help regulate body temperature!</p>
 </div>
 </div>
 
@@ -64,8 +65,10 @@ There are three main species of elephants — each adapted to its own habitat:
 </div>
 </div>
 
-<div id="footer"
-<p>© 2025 Elephants of the World</p>
-</div>
-
+  <!-- Added missing '>' and closing tag for footer -->
+  <div id="footer">
+    <p>© 2025 Elephants of the World</p>
+  </div>
+  <!-- Added missing closing </body> tag so the body knows where to end-->
+</body>
 </html>

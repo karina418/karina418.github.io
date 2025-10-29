@@ -19,13 +19,31 @@
     top: 0;
     width: 100%
   }
+    ul li{
+      float: left;
+    }
+    ul li a{
+      dislay: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; 
+    }
+    ul li a:hover:not(.active){
+      background-color: #111;
+      font-size: larger;
+      text-decoration: white;
+    }
+    ul li a:active{
+      background-color: #04aa6d;
+    }
   </style>
 </head>
 <body>
   <nav>
     <ul>
       <li><a class="active" href="0">Home</a></li>
-      <li><a href="0">Page 2</a></li>
+      <li><a href="#lesson1.html">Page 2</a></li>
       <li><a href="0">Page 3</a></li>
     </ul>
   </nav>

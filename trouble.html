@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta charset="UTF-8">
-<!--This tag was missing which could affect the way everything is displayed-->
-<title>Elephants of the World</title>
-<link href="style.css" rel="stylesheet" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elephants of the World</title>
+  <link href="" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<div id="navbar">
-<h2>🐘 Elephants</h2>
-  <!--I added a forward slash the closing h2 tag because without it, it would be considered a starting tag when it isnt supposed to be one-->
-<h2>Karina</h2> 
-</div>
- 
+  <div id="navbar">
+    <!-- The <h2> tag was not closed before. Closing it stops the text from leaking into other areas. -->
+    <h2>🐘 Elephants</h2>
+    <h2>Name</h2>
+  </div>
 
-<div id="hero">
-<h1>Elephants of the World</h1> 
-<p>The gentle giants that shape our ecosystems.</p>
-  </div> 
-  <!--I added another closing div tag for this section so it knows where to end and doesn't affect other sections-->
-<div class=section>
-<h2>About Elephants</h2>
-<p>Elephants are the largest land mammals on Earth. They are highly intelligent and form
-strong 
-  <!--I added a staring p tag so the paragraph knows where to start, without this, the ending p tag doesnt have a start.-->
-family bonds led by a matriarch. They use their trunks for eating, drinking, and
-communication.
-</p>
+  <div id="hero">
+    <h1>Elephants of the World</h1>
+    <p>The gentle giants that shape our ecosystems.</p>
+  </div>
+  <!-- This </div> was missing. Without it, the next sections were stuck inside #hero. -->
 
-<div class="parent-box">
-<p>This light blue box is the parent element.</p>
-<div class="child-box">
-<p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p>
+  <div class="section">
+    <h2>About Elephants</h2>
+
+    <!-- The text had a </p> but no opening <p>. This breaks the layout. Adding <p> fixes it. -->
+    <p>
+      Elephants are the largest land mammals on Earth. They are highly intelligent and form
+      strong family bonds led by a matriarch. They use their trunks for eating, drinking, and
+      communication.
+    </p>
+
+    <div class="parent-box">
+      <p>This light blue box is the parent element.</p>
+
+      <div class="child-box">
+        <!-- This part was fine — just keeping the code clean. -->
+        <p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="section">
-<h2 class="sticky-title">Types of Elephants</h2>
-<p>
-There are three main species of elephants — each adapted to its own habitat:
-</p>
-<ul>
-<li><strong>African Savannah Elephant:</strong> Found in open grasslands.</li>
-<li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
-<li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
-<!--I deleted the extra closing li tag because there was no starting li tag for it, meaning there is no use of it being there and it would affect how the list turned out-->
-</ul>
-  <!--I added a closing ul tag because the list wouldnt know where to end without it, meaning that it would affect the following information-->
-<div class="info-box">
- <!-- Closed <strong> tag properly -->
+  <div class="section">
+    <h2 class="sticky-title">Types of Elephants</h2>
+    <p>
+      There are three main species of elephants — each adapted to its own habitat:
+    </p>
+
+    <!-- There was an extra </li> that did not belong. Removing it fixes the list. -->
+    <ul>
+      <li><strong>African Savannah Elephant:</strong> Found in open grasslands.</li>
+      <li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
+      <li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
+    </ul>
+
+    <div class="info-box">
+      <!-- The <strong> tag was left open before. Closing it stops everything from turning bold. -->
       <p><strong>Fun fact:</strong> Elephant ears help regulate body temperature!</p>
-</div>
-</div>
+    </div>
+  </div>
 
-<div class="section" >
-<h2>Fun Facts</h2>
-<div class="facts-container">
-<div class="fact-card">🐘 Elephants can recognize themselves in mirrors.</div>
-  <!--I added a closing div tag for the last div because without it, the div wouldnt know where to end, affecting the information around it-->
-<div class="fact-card">💧 They use their trunks like snorkels when swimming.</div>
-<div class="fact-card">🌿 They eat up to 300 pounds of food per day!</div>
-  <!--I deleted the extra closing div tag because it was not needed and could potentially mess up the other div containers-->
-</div>
-</div>
+  <div class="section">
+    <h2>Fun Facts</h2>
+    <div class="facts-container">
 
-  <!-- Added missing '>' and closing tag for footer -->
+      <!-- Before, one .fact-card was missing its closing tag and had all others inside it.
+           Each fact needs its own div or the layout will break. -->
+      <div class="fact-card">🐘 Elephants can recognize themselves in mirrors.</div>
+      <div class="fact-card">💧 They use their trunks like snorkels when swimming.</div>
+      <div class="fact-card">🌿 They eat up to 300 pounds of food per day!</div>
+    </div>
+  </div>
+
+  <!-- The opening <div> tag was missing a ">". Adding it fixes the footer so it displays correctly. -->
   <div id="footer">
     <p>© 2025 Elephants of the World</p>
   </div>
-  <!-- Added missing closing </body> tag so the body knows where to end-->
+
+  <!-- These closing tags were missing. They finish the page properly. -->
 </body>
 </html>

@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Lesson 2</title>
-  <link href="./style.css" rel="stylesheet" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elephants of the World</title>
+  <link href="" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<body>
-<div class="name"><h1>Karina</h1></div>
-  <div class="question">
-  <h2>What is a div element?</h2>
-  <p>The div element is a like bucket that groups sections of a webpage together.</p>
-    </div>
-     <div class="question">
-    <h2>What is one way you can identify or "target" a div element?</h2>
-  <p>A div can be identified or “targeted” in several different ways. One way is, classes. When you are calling a class in CSS, it will target every div with the same class.</p>
-         </div>
-    <div class="question">
-    <h2>Why would you use a div element?</h2>
-  <p>A div element is used in HTML to group related content together so it can be easily styled, organized, or controlled with CSS and JavaScript.</p>
-      </div>
-      <div class="question">
-    <h2>What is a border property?</h2>
-  <p>The border property allows you to style the border around an element. The border indicates the size of an element.</p>
-      </div>
-        <div class="question">
-    <h2>What are some of the different border properties?</h2>
-  <p>Border width, Border color, Border sides, Rounded borders</p>
-        </div>
-          <div class="question">
-    <h2>What is the difference between margins and padding?</h2>
-  <p>A margin is the spacing around an element from everything around it. A margin is the spacing around an element from everything around it.</p>
+  <div id="navbar">
+    <!-- The <h2> tag was not closed before. Closing it stops the text from leaking into other areas. -->
+    <h2>🐘 Elephants</h2>
+    <h2>Name</h2>
   </div>
+
+  <div id="hero">
+    <h1>Elephants of the World</h1>
+    <p>The gentle giants that shape our ecosystems.</p>
+  </div>
+  <!-- This </div> was missing. Without it, the next sections were stuck inside #hero. -->
+
+  <div class="section">
+    <h2>About Elephants</h2>
+    <!-- The text had a </p> but no opening <p>. This breaks the layout. Adding <p> fixes it. -->
+    <p>
+      Elephants are the largest land mammals on Earth. They are highly intelligent and form
+      strong family bonds led by a matriarch. They use their trunks for eating, drinking, and
+      communication.
+    </p>
+
+    <div class="parent-box">
+      <p>This light blue box is the parent element.</p>
+
+      <div class="child-box">
+        <!-- This part was fine — just keeping the code clean. -->
+        <p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="sticky-title">Types of Elephants</h2>
+    <p>
+      There are three main species of elephants — each adapted to its own habitat:
+    </p>
+
+    <!-- There was an extra </li> that did not belong. Removing it fixes the list. -->
+    <ul>
+      <li><strong>African Savannah Elephant:</strong> Found in open grasslands.</li>
+      <li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
+      <li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
+    </ul>
+
+    <div class="info-box">
+      <!-- The <strong> tag was left open before. Closing it stops everything from turning bold. -->
+      <p><strong>Fun fact:</strong> Elephant ears help regulate body temperature!</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Fun Facts</h2>
+    <div class="facts-container">
+
+      <!-- Before, one .fact-card was missing its closing tag and had all others inside it.
+           Each fact needs its own div or the layout will break. -->
+      <div class="fact-card">🐘 Elephants can recognize themselves in mirrors.</div>
+      <div class="fact-card">💧 They use their trunks like snorkels when swimming.</div>
+      <div class="fact-card">🌿 They eat up to 300 pounds of food per day!</div>
+    </div>
+  </div>
+
+  <!-- The opening <div> tag was missing a ">". Adding it fixes the footer so it displays correctly. -->
+  <div id="footer">
+    <p>© 2025 Elephants of the World</p>
+  </div>
+
+  <!-- These closing tags were missing. They finish the page properly. -->
 </body>
 </html>
+

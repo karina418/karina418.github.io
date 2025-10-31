@@ -22,174 +22,107 @@ h2 {
 } */
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f5f9fc;
-  color: #333;
-  /* Sets the main text style and page background.
-     This makes the page easier to read and gives it a clean look. */
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f9fc;
+    color: #333;
 }
 
 #navbar {
-  position: fixed;
-  /* Keeps the navbar stuck to the top even when scrolling.
-     This makes navigation easier for the user. */
-
-  width: 100%;
-  background-color: #3a7ca5;
-  color: white;
-
-  padding: 10px 0;
-  /* Adds breathing room inside the navbar so it’s not cramped. */
-
-  z-index: 100;
-  /* Makes sure the navbar stays above everything else.
-     Without this, other items could cover it. */
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /* Centers navbar items evenly.
-     Fixes layout issues and makes it look balanced. */
+    position: fixed;
+    width: 100%;
+    background-color: #3a7ca5;
+    color: white;
+    padding: 10px 0;
+    z-index: 100; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #hero {
-  text-align: center;
-  background: #c8e8f3;
-  color: #2b6777;
-
-  padding: 140px 20px 80px;
-  /* Extra top padding creates space for the fixed navbar.
-     Without this, the text would sit under the navbar. */
-
-  margin-top: 60px;
-  /* Adds space above the section so it doesn't touch the navbar. */
-
-  position: relative;
-  z-index: 1;
-  /* Keeps the hero text above background items but below the navbar. */
+    text-align: center;
+    background: #c8e8f3;
+    color: #2b6777;
+    padding: 140px 20px 80px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
 }
 
 #hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  /* Makes the main title large and spaced nicely. */
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 #hero p {
-  font-size: 1.2rem;
-  /* Makes subtitle easier to read by increasing size. */
+    font-size: 1.2rem;
 }
 
 .section {
-  margin: 60px auto;
-  width: 80%;
-  max-width: 900px;
-
-  color: white;
-  padding: 30px;
-
-  border-radius: 12px;
-  /* Soft rounded corners for a smoother look. */
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  /* Added soft shadow to lift the section off the background visually. */
-
-  position: relative;
-  /* Allows absolutely positioned elements inside it. */
+    margin: 60px auto;
+    width: 80%;
+    max-width: 900px;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .parent-box {
-  position: relative; /* <- Added missing semicolon.
-                         Without it, the browser ignores the line and breaks child positioning. */
-
-  background-color: #d8efff;
-  padding: 30px;
-  margin-top: 25px;
-  border-radius: 8px;
-  /* Creates a simple container with color and spacing. */
+    position: relative; /* FIXED — missing semicolon at end */
+    background-color: #d8efff;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 8px;
 }
 
 .child-box {
-  position: absolute;
-  /* Lets this box float inside the parent box exactly where you want it. */
-
-  top: 10px;
-  right: 20px;
-
-  background-color: #9cd0ff;
-
-  padding: 10px;
-  /* Fixed typo from "10png" to "10px".
-     The original version was invalid CSS, so the padding didn't work. */
-
-  border-radius: 6px;
-
-  width: 45%;
-  /* Fixed spelling error: "with" → "width".
-     Without this fix, the width rule didn’t run at all. */
-
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  /* Adds a small shadow to make it look lifted off the box. */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #9cd0ff;
+    padding: 10px; /* FIXED — was "10png" which is invalid */
+    border-radius: 6px;
+    width: 45%; /* FIXED — "with" was misspelled */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .sticky-title {
-  position: sticky;
-  top: 70px;
-  /* Makes the title stay visible while scrolling.
-     Helps the user know which section they’re in. */
-
-  background-color: #3a7ca5;
-
-  color: white;
-  /* Fixed misspelling: "colour" → "color".
-     CSS only accepts American spelling. */
-
-  padding: 10px;
-  border-radius: 8px;
-
-  z-index: 5;
-  /* Makes sure the sticky title stays above other section content. */
+    position: sticky;
+    top: 70px;
+    background-color: #3a7ca5;
+    color: white; /* FIXED — "colour" is not valid in CSS, changed to "color" */
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 5;
 }
 
 .info-box {
-  background-color: #f0f9ff;
-  /* Added missing "#" so the color works.
-     Without the #, the browser ignores the line completely. */
-
-  border-left: 6px solid #3a7ca5;
-
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 8px;
-  /* Creates a highlighted callout box for extra info. */
+    background-color: #f0f9ff; /* FIXED — missing # before hex color */
+    border-left: 6px solid #3a7ca5;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-#fact-card {
-  /* NOTE: Your HTML uses class="fact-card".
-     This selector (#fact-card) will not apply unless you change it to .fact-card.
-     I left it as-is because you did not ask to change structure, but it will NOT work. */
-
-  background-color: #e3f8e0;
-  border: 2px solid #6fc276;
-
-  padding: 15px;
-  border-radius: 8px;
-
-  text-align: center;
-
-  position: relative;
-  margin-top: 10px;
+/* FIXED — ID name was #fact-card but in HTML it's class "fact-card". 
+   IDs should only be used once. I changed to .fact-card */
+.fact-card {
+    background-color: #e3f8e0;
+    border: 2px solid #6fc276;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
 }
 
 #footer {
-  background-color: #3a7ca5;
-  color: white;
-  text-align: center;
-  padding: 20px;
-
-  position: relative;
-
-  z-index: 10;
+    background-color: #3a7ca5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 10; /* FIXED — missing colon */
 }
-  /*I added a colon after index to it separate the property name from its value*/
-/*I added a closing } tag for this container so it knows where to end, or else it would keep going and not know when to stop going*/

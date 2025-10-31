@@ -21,7 +21,7 @@ h2 {
   border-color: blueviolet;
 } */
 
-body {
+.body {
     font-family: "Segoe UI", sans-serif;
     background-color: #f5f9fc;
     color: #333;
@@ -90,9 +90,9 @@ body {
 
 .sticky-title {
     position: sticky;
-    top: 70px;
+    top: 0px;
     background-color: #3a7ca5;
-    color: white; /* FIXED — "colour" is not valid in CSS, changed to "color" */
+    color: white; /*"colour" is not valid in CSS, changed to "color" */
     padding: 10px;
     border-radius: 8px;
     z-index: 5;

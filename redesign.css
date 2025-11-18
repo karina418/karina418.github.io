@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #333;
+}
+
+.top-nav {
+    background: #d3b0d8;
+    padding: 12px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.top-nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tagline {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('roses.jpg') center/cover no-repeat;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-box {
+    background: white;
+    padding: 20px 40px;
+    font-size: 48px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #633;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.shop-btn {
+    padding: 12px 28px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact-bar {
+    background: #eee;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.popular-options {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.popular-options h3 {
+    margin-bottom: 8px;
+}
+
+.bouquet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.bouquet-card {
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.bouquet-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.purple { background: #e8d9f3; }
+.gold { background: #f4d79a; }
+.orange { background: #f7b089; }
+.red { background: #f2a19a; }
+.blue { background: #d4e4f7; }
+.cream { background: #f3e8d2; }
+
+.bouquet-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #633;
+}

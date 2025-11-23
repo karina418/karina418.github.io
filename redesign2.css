@@ -1,99 +1,100 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+{
+color: #fff;
+font-weight: bold;
+text-decoration: none;
 }
 
-body {
-    background: #fdfdfd;
-    color: #333;
-}
 
-.top-nav {
-    background: #c9a8cb;
-    padding: 14px;
-    display: flex;
-    gap: 25px;
-    postition: sticky;
-}
-
-.top-nav a {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
+/* Active nav link underline */
 .top-nav .active {
-    border-bottom: 2px solid #fff;
+border-bottom: 2px solid #fff;
 }
 
+
+/* Two-column layout container */
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    padding: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px;
+padding: 40px;
 }
 
+
+/* Left, Right side main headings */
 .left-side h1,
 .right-side h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #5c3a3a;
+font-size: 32px;
+margin-bottom: 20px;
+color: #5c3a3a;
 }
 
+
+/* Form layout */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 35px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-bottom: 35px;
 }
 
+
+/* Input + textarea styling */
 form input,
 form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
 }
+
 
 textarea {
-    height: 90px;
+height: 90px;
 }
 
+
+/* Submit button styling */
 .send-btn {
-    width: 120px;
-    padding: 10px;
-    background: #c5a27b;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
+width: 120px;
+padding: 10px;
+background: #c5a27b;
+border: none;
+border-radius: 20px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+margin-top: 10px;
 }
 
+
+/* Hours section header */
 .hours h2 {
-    font-size: 28px;
-    margin-bottom: 12px;
-    color: #5c3a3a;
+font-size: 28px;
+margin-bottom: 12px;
+color: #5c3a3a;
 }
 
+
+/* Hours list items */
 .hours p {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    margin-bottom: 4px;
-    width: 70%;
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+margin-bottom: 4px;
+width: 70%;
 }
 
+
+/* Right side contact text */
 .right-side p {
-    line-height: 1.7;
-    font-size: 18px;
-    margin-bottom: 20px;
+line-height: 1.7;
+font-size: 18px;
+margin-bottom: 20px;
 }
 
+
+/* Map image styling */
 .map-box img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }

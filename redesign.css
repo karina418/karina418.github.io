@@ -1,55 +1,62 @@
-* {
+ {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-} 
-
-body { 
-    background: #f7f7f7;
-    color: #333;
+    box-sizing: border-box; /* Ensures width/height include padding + border */
+    font-family: Arial, sans-serif; /* Simple, readable font for the whole site */
 }
 
+/* Sets the full-page background and default text color */
+body {
+    background: #f7f7f7; /* Light background for a clean floral aesthetic */
+    color: #333; /* Dark grey text for readability */
+}
+
+/* Top navigation bar section */
 .top-nav {
-    background: #d3b0d8;
+    background: #d3b0d8; /* Soft purple tone that matches floral theme */
     padding: 12px;
     display: flex;
-    gap: 20px;
-    position: sticky;
+    gap: 20px; /* Space between nav links */
+    justify-content: flex-start; /* Aligns links to the left side */
 }
 
+/* Navigation links styling */
 .top-nav a {
-    color: white;
+    color: white; /* Contrast against purple background */
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /* Removes underline for cleaner look */
 }
 
+/* Tagline centered under navigation */
 .tagline {
     text-align: center;
     margin: 20px 0;
     font-size: 18px;
 }
 
+/* Hero image section at the top of the homepage */
 .hero {
-    background: url('https://cassidysflowers.com/cdn/shop/collections/Roses.jpg?v=1747333047&width=2000') center/cover no-repeat;
-    height: 320px;
+    background: url('roses.jpg') center/cover no-repeat; /* Decorative floral banner */
+    height: 320px; /* Large enough for hero text/logo */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Space between logo box and button */
 }
 
+/* The white box that shows the Cassidy's Flowers logo */
 .logo-box {
     background: white;
     padding: 20px 40px;
-    font-size: 48px;
+    font-size: 48px; /* Large typography for brand name */
     font-weight: bold;
-    border-radius: 15px;
-    color: #633;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 15px; /* Soft rounded edges for welcoming design */
+    color: #633; /* Deep floral brown for warmth */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Elevation for emphasis */
 }
 
+/* Shop Now button in the hero section */
 .shop-btn {
     padding: 12px 28px;
     background: white;
@@ -57,17 +64,19 @@ body {
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer; /* Makes it clear it's clickable */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Matches the logo box shadow */
 }
 
+/* Contact information bar below hero */
 .contact-bar {
-    background: #eee;
+    background: #eee; /* Light grey section for contrast */
     padding: 12px;
     text-align: center;
     font-size: 14px;
 }
 
+/* Popular options section heading */
 .popular-options {
     padding: 20px;
     margin-left: 20px;
@@ -77,27 +86,31 @@ body {
     margin-bottom: 8px;
 }
 
+/* Grid layout for the bouquet option cards */
 .bouquet-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3-column product layout */
+    gap: 20px; /* Space between product cards */
     padding: 20px;
 }
 
+/* Each bouquet card container */
 .bouquet-card {
     background: white;
     padding: 12px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Light card shadow */
 }
 
+/* Bouquet card images */
 .bouquet-card img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space between image and text */
 }
 
+/* Custom background colors for each bouquet card */
 .purple { background: #e8d9f3; }
 .gold { background: #f4d79a; }
 .orange { background: #f7b089; }
@@ -105,8 +118,10 @@ body {
 .blue { background: #d4e4f7; }
 .cream { background: #f3e8d2; }
 
+/* Title styling under each bouquet image */
 .bouquet-card h5 {
     font-size: 18px;
     font-weight: bold;
-    color: #633;
+    color: #633; /* Matches brand color palette */
 }
+

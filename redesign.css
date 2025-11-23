@@ -36,7 +36,7 @@ body {
 
 /* Hero image section at the top of the homepage */
 .hero {
-    background: url('roses.jpg') center/cover no-repeat; /* Decorative floral banner */
+    background: url('https://cassidysflowers.com/cdn/shop/collections/Roses.jpg?v=1747333047&width=2000') center/cover no-repeat; /* Decorative floral banner */
     height: 320px; /* Large enough for hero text/logo */
     display: flex;
     flex-direction: column;

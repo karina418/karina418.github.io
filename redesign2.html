@@ -4,50 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Cassidy's Flowers</title> 
+    <!-- Linking the Contact Page CSS stylesheet -->
     <link rel="stylesheet" href="redesign2.css" />
 </head>
 <body>
-    <header>
-        <nav class="top-nav">
-            <a href="redesign.html">HOME</a>
-            <a href="redesign2.html" class="active">CONTACT US</a>
-        </nav>
-    </header>
+   <!-- Header containing the navigation bar -->
+<header>
+<nav class="top-nav">
+<!-- Navigation links: Home ND Current Contact Page -->
+<a href="#">HOME</a>
+<a href="#" class="active">CONTACT US</a> <!-- Active page highlighted -->
+</nav>
+</header>
+<!-- Main container with two columns, Contact Form and Location -->
+<section class="contact-container">
+<!-- LEFT SIDE: Contact form + Hours -->
+<div class="left-side">
+<!-- Contact form heading -->
+<h1>Contact us</h1>
+<!-- Contact form where users enter their info -->
+<form>
+<!-- Name field -->
+<label>Name</label>
+<input type="text" />
+<!-- Email field -->
+<label>Email</label>
+<input type="email" />
+<!-- Phone number field -->
+<label>Phone number</label>
+<input type="text" />
+<!-- Comment textarea for messages -->
+<label>Comment</label>
+<textarea></textarea>
+<!-- Submit button -->
+<button type="submit" class="send-btn">Send</button>
+</form>
+<!-- Hours of operation section -->
+<div class="hours">
+<h2>Hours</h2>
+<p>Monday <span>8:30AM–5:00PM</span></p>
+<p>Tuesday <span>8:30AM–5:00PM</span></p>
+<p>Wednesday <span>8:30AM–5:00PM</span></p>
+<p>Thursday <span>8:30AM–5:00PM</span></p>
+<p>Friday <span>8:30AM–5:00PM</span></p>
+<p>Saturday <span>8:30AM–1:00PM</span></p>
+<p>Sunday <span>CLOSED</span></p>
+</div>
+</div>
+<!-- RIGHT SIDE: Business location, map image -->
+<div class="right-side">
 
-    <section class="contact-container">
-        <div class="left-side">
-            <h1>Contact us</h1>
-            <form>
-                <label>Name</label>
-                <input type="text" />
-
-                <label>Email</label>
-                <input type="email" />
-
-                <label>Phone number</label>
-                <input type="text" />
-
-                <label>Comment</label>
-           
-
-                <button type="submit" class="send-btn">Send</button>
-            </form>
-
-            <div class="hours">
-                <h2>Hours</h2>
-                <p>Monday <span>8:30AM–5:00PM</span></p>
-                <p>Tuesday <span>8:30AM–5:00PM</span></p>
-                <p>Wednesday <span>8:30AM–5:00PM</span></p>
-                <p>Thursday <span>8:30AM–5:00PM</span></p>
-                <p>Friday <span>8:30AM–5:00PM</span></p>
-                <p>Saturday <span>8:30AM–1:00PM</span></p>
-                <p>Sunday <span>CLOSED</span></p>
-            </div>
-        </div>
-
-        <div class="right-side">
-            <h1>Location</h1>
-            <p>15 Main St S<br>Newmarket, ON L3Y 3Y1<br>905-895-8663<br>admin@cassidysflowersandgifts.com</p>
+<!-- Location heading -->
+<h1>Location</h1>
+<!-- Business address and contact info -->
+<p>
+15 Main St S<br>
+Newmarket, ON L3Y 3Y1<br>
+905-895-8663<br>
+admin@cassidysflowersandgifts.com
+</p>
+<!-- Map image showing location visually -->
 
             <div class="map-box">
                 <img src="https://www.google.com/maps/vt/data=oGeVQG2S7lZ4dRF9OCJIC5ID1BA5sMG9jCP2DLSU6PfZRurqgIlQgxEf6jMrtueOTcoaPWmu_TE8Nm172ZCvKl6mzhZt2QNMJHXO2GY6yw_BsLCNyEn47i37Bra0_OfvX38YWkz9il2dOfR1HgGZW6qobDql4GbTyrJtdyhml1UB&w=243&h=80" alt="Map Location" />
